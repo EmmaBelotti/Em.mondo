@@ -1,2 +1,2 @@
 # Em.mondo
- my hobby website
+ a website to host my drawings and miniatures
