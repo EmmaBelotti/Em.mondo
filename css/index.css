@@ -190,13 +190,13 @@ body {
 }
 
 #eyeopen:hover ~ #handL {
-    transform: translateX(max(75vw, 400px)); /*usa la larghezza del contenitore*/
+    transform: translateX(max(80vw, 400px)); /*usa la larghezza del contenitore*/
     transition: all 7s;
 
 }
 
 #eyeopen:hover ~ #handR {
-    transform: translateX(min(-75vw, -400px));
+    transform: translateX(min(-80vw, -400px));
     transition: all 7s;
 }
 
