@@ -167,9 +167,9 @@ body {
 
 .middleimage {
     animation: middleimage 6s infinite;
-    display:block;
     position: relative;
-    width: clamp(280px, 40%, 100%);
+    object-fit:contain;
+    max-width: max(280px, 25cqw); /*cqw e' una percentuale della grandezza del contenitore*/
     border-width: 2px;
     border-style: solid;
     border-color: #ffc20e;
