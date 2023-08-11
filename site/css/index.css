@@ -232,3 +232,12 @@ body {
 #ctrlz:hover ~ .mistake{
     opacity:0;
 }
+
+#buttontextbox {
+    width: 88px; 
+    height: 31px;
+    background-color: black;
+    color:red;
+    border: 1px solid red;
+    padding-right: 2px;
+}
