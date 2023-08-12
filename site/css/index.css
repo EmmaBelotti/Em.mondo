@@ -3,6 +3,7 @@ html {
     font-family: verdana;
     max-width: 100vw; 
     overflow-x: hidden;
+
 }
 
 #mainpagelink { /*altrimenti esce il link da boomer sottolineato*/
