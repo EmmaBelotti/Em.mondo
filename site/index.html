@@ -16,7 +16,12 @@
             *{
                 cursor: url('/file/img/eyeicon.ico') 16 16, auto !important; 
             }
-        </style>
+        </style> 
+        <script type="text/javascript"> //else the iframe cut content
+            function resizeIframe(iframe) {
+                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+            }
+        </script>  
     </head>
 
     <body> 
@@ -148,7 +153,8 @@
             </div>
 
             <hr>
-            <iframe scrolling="no" src="/pages/buttonwall.html" title="buttonwall" style="display: block; width: 100%; height: 100%; border: none;" ></iframe>
+            <iframe onload="resizeIframe(this)" scrolling="no" src="/pages/buttonwall.html" title="buttonwall" style="display: block; width: 100%; border: none;" ></iframe>
+            
             
             <a href="https://youtu.be/BiaFMRv7Ct8" target="_blank" style="color: grey; text-decoration: none; background-color: none; margin-left: 0.3em;"><i>"Deltarune ~ hip shop" - remix by DJ CUTMAN</i></a>
         </div>
