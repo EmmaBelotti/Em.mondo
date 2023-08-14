@@ -1,6 +1,6 @@
 
 <!DOCTYPE html> 
-<html> 
+<html lang="en"> 
     <head> 
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,6 +20,9 @@
     </head>
 
     <body> 
+        <!-- song-->
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/BiaFMRv7Ct8?autoplay=1&loop=1&playlist=BiaFMRv7Ct8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
         <div id="titlebox"> <!-- contenitore con il titolo-->
             <img style="display: flex; height:70%; align-self: center;" src="file/gif/italy.gif">
             <img style="display: flex;" src="file/gif/ring.gif">
@@ -33,7 +36,11 @@
         </div>
         <br>
         <div id="sfondo"> <!-- contenitore sopra il bg-->
-            <i>If the site doesn't load properly, go to the <a href="pages/simplifiedhome.html">simplified home page</a> </i> <hr>
+            
+            <i style="color:gainsboro;">If the site doesn't load properly, go to the <a href="pages/simplifiedhome.html">simplified home page</a> </i> <br>
+            <i style="color:gainsboro;"> yt is dumb and doesn't play the song if you don't click <a href="">something</a> for the first time (or if you reload)</i>
+
+            <hr>
             <p>
                 Hi! I'm <span style="color:aqua">Ema (he/him)</span>, and this is my world! I'm an italian guy with too many hobbies,
                 this site is a sort of cozy/digital museum of all the things that i have done, enjoy your stay!
@@ -140,18 +147,9 @@
                 </div>
             </div>
 
-
             <hr>
-            <div style="display: flex; gap: 0.5em; flex-wrap: wrap;"> <!--buttons!-->
-                <a href="https://emmabelotti.neocities.org/" target="_blank"><img alt="A button that redirects to EM.Mondo" src="https://emmabelotti.neocities.org/file/gif/sitebutton.gif"></a>
-                <!--to copy paste my button-->
-                <textarea id="buttontextbox" readonly><a href="https://emmabelotti.neocities.org/" target="_blank"><img alt="A button that redirects to EM.Mondo" src="https://emmabelotti.neocities.org/file/gif/sitebutton.gif"></a></textarea>
-                <div style="height:31px; border-right: 2px solid gainsboro;"></div> <!--vertical line-->
-
-                <a href="https://timewatcher.neocities.org/" target="_blank"><img alt="A button that will take you to Timewatcher's website/fake OS." src="https://timewatcher.neocities.org/img/site-button.gif"></a>
-                
-            </div>
-
+            <iframe src="/pages/buttonwall.html" title="buttonwall" style="display: block; width: 100%; height: fit-content; border: none;" ></iframe>
+            <a href="https://youtu.be/BiaFMRv7Ct8" target="_blank" style="color: grey; text-decoration: none; background-color: none; margin-left: 0.3em;"><i>"Deltarune ~ hip shop" - remix by DJ CUTMAN</i></a>
         </div>
     </body>
 

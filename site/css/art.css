@@ -171,12 +171,3 @@ body {
 #artgallery:hover ~ #isthisart {
     opacity: 1;
 }
-
-#buttontextbox {
-    width: 88px; 
-    height: 31px;
-    background-color: black;
-    color:red;
-    border: 1px solid red;
-    padding-right: 2px;
-}
