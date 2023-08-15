@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
 #buttontextbox {
     width: 88px; 
     height: 31px;
@@ -14,4 +21,12 @@ img {
 
 img:hover {
     top: -2px;
+}
+
+.buttoncointainer {
+    display: flex;
+    gap: 0.25em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
