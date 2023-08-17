@@ -12,10 +12,15 @@
                 cursor: url('/file/img/eyeicon.ico') 16 16, auto !important; 
             }
         </style> 
-        <script type="text/javascript"> //else the iframe cut content
-            function resizeIframe(iframe) {
+        <script>
+            function resizeIframe() {
+                var iframe = document.getElementById('buttonframe');
+                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+                var iframe = document.getElementById('article');
                 iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
             }
+
+            window.addEventListener('resize', resizeIframe);
         </script>  
     </head>
 
@@ -39,14 +44,14 @@
         <div id="sfondo"> <!-- contenitore sopra il bg-->
             
             <!-- contiene un iframe che cambia articolo quando pigiato-->
-            <iframe onload="resizeIframe(this)" scrolling="no" src="articles/hub.html" title="articles" style="display: block; width: 100%; border: none;" ></iframe>
+            <iframe id="article" onload="resizeIframe()" scrolling="no" src="articles/hub.html" title="articles" style="display: block; width: 100%; border: none;" ></iframe>
             
             
 
 
 
             <hr>
-            <iframe onload="resizeIframe(this)" loading="lazy" scrolling="no" src="/pages/buttonwall.html" title="buttonwall" style="display: block; width: 100%; border: none;" ></iframe>
+            <iframe id="buttonframe" loading="lazy" scrolling="no" src="/pages/buttonwall.html" title="buttonwall" style="display: block; width: 100%; border: none;" ></iframe>
             
             
             <a href="https://youtu.be/XG9SQwKaj2k" target="_blank" style="color: gainsboro; text-decoration: none; background-color: none; margin-left: 0.3em;"><i>Flying - Oliver Buckland</i></a>

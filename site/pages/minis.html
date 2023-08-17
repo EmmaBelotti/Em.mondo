@@ -17,10 +17,13 @@
                 cursor: url('/file/img/eyeicon.ico') 16 16, auto !important; 
             }
         </style>
-        <script type="text/javascript"> //else the iframe cut content
-            function resizeIframe(iframe) {
+        <script>
+            function resizeIframe() {
+                var iframe = document.getElementById('buttonframe');
                 iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
             }
+
+            window.addEventListener('resize', resizeIframe);
         </script> 
     </head>
 
@@ -108,7 +111,7 @@
 
 
             <hr>
-            <iframe onload="resizeIframe(this)" loading="lazy" scrolling="no" src="buttonwall.html" title="buttonwall" style="display: block; width: 100%; border: none;" ></iframe>
+            <iframe id="buttonframe" onload="resizeIframe()" loading="lazy" scrolling="no" src="buttonwall.html" title="buttonwall" style="display: block; width: 100%; border: none;" ></iframe>
             
             <a href="https://youtu.be/8cyfKgGtUXo" target="_blank" style="color: grey; text-decoration: none; background-color: none;  margin-left: 0.3em;"><i>Unknown - Oliver Buckland</i></a>
         
