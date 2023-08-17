@@ -234,3 +234,14 @@ body {
     opacity:0;
 }
 
+#guide {
+    color:red;
+}
+
+#guidetarget {
+    opacity: 0;
+}
+
+#guide:hover ~ #guidetarget {
+    opacity: 1;
+}

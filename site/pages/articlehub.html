@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en" style="height: 100%; font-family: verdana; max-width: 100vw; overflow-x: hidden;"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Em.mondo</title> 
+        <link rel="stylesheet" type="text/css" href="../css/article.css" /> 
+        <link rel="icon" type="image/x-icon" href="../file/img/eyeicon.ico">
+        <!---->
+        <style> 
+            *{
+                cursor: url('/file/img/eyeicon.ico') 16 16, auto !important; 
+            }
+        </style> 
+        <script type="text/javascript"> //else the iframe cut content
+            function resizeIframe(iframe) {
+                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+            }
+        </script>  
+    </head>
+
+    <body id="outerbody"> 
+        <!-- song-->
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/XG9SQwKaj2k?autoplay=1&loop=1&playlist=XG9SQwKaj2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--cat-->
+
+        <div id="titlebox"> <!-- contenitore con il titolo-->
+            <img style="display: flex; height:70%; align-self: center;" src="../file/gif/italy.gif">
+            <img style="display: flex;" src="../file/gif/ring.gif">
+            <img style="display: flex; margin: 0.5%;" src="../file/gif/star.gif">
+            <div id="title"> 
+                <b><a href="../index.html" id="mainpagelink">Em.mondo!</a></b> <!-- se clicchi il titolo ti reinderizza-->
+            </div>
+            <img style="display: flex;" src="../file/gif/welcome.gif">
+            <img style="display: flex;" src="../file/gif/spacethingy.gif">
+            <img style="display: flex;" src="../file/gif/rubik.gif">
+        </div>
+        <br>
+        <div id="sfondo"> <!-- contenitore sopra il bg-->
+            
+            <!-- contiene un iframe che cambia articolo quando pigiato-->
+            <iframe onload="resizeIframe(this)" scrolling="no" src="articles/hub.html" title="articles" style="display: block; width: 100%; border: none;" ></iframe>
+            
+            
+
+
+
+            <hr>
+            <iframe onload="resizeIframe(this)" loading="lazy" scrolling="no" src="/pages/buttonwall.html" title="buttonwall" style="display: block; width: 100%; border: none;" ></iframe>
+            
+            
+            <a href="https://youtu.be/XG9SQwKaj2k" target="_blank" style="color: gainsboro; text-decoration: none; background-color: none; margin-left: 0.3em;"><i>Flying - Oliver Buckland</i></a>
+        </div>
+    </body>
+
+</html>
