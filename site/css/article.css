@@ -27,8 +27,8 @@ a { /*altrimenti i link non si vedono */
 }
 
 @keyframes colonne {
-    0%{ background-position-y: 100%; }
-    100%{ background-position-y: 0%; }
+    0%{ background-position-y: 100em; }
+    100%{ background-position-y: 0em; }
 }
 
 @property --color1 { /*controllano R del gradiente*/
@@ -61,11 +61,13 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
     overflow-x: hidden;
     width: 100%;
     color: white; /*per il testo*/
     justify-content: center;
+    align-content: center;
 }
 
 #outerbody { /*for the article container*/
@@ -155,7 +157,7 @@ body{
     position: relative;
     object-fit:contain;
     align-self: center;
-    max-width: max(280px, 40cqw); /*cqw e' una percentuale della grandezza del contenitore*/
+    max-width: 40cqw; /*cqw e' una percentuale della grandezza del contenitore*/
     border-width: 2px;
     border-style: solid;
     border-color: #ffc20e;

@@ -38,8 +38,8 @@ a { /*altrimenti i link non si vedono */
 }
 
 @keyframes colonne {
-    0%{ background-position-y: 100%; }
-    100%{ background-position-y: 0%; }
+    0%{ background-position-y: 100em; }
+    100%{ background-position-y: 0em; }
 }
 
 @property --color1 { /*controllano R del gradiente*/
