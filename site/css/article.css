@@ -63,7 +63,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
-    overflow-x: hidden;
+    
     width: 100%;
     color: white; /*per il testo*/
     justify-content: center;
