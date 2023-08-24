@@ -104,7 +104,7 @@ body {
     border-color: #ffc20e;
     position: fixed; /* sta fermo */
     top: 0; 
-    width: 100vh;
+    width: 100%;
     height: max(2.7em, 10%);
     z-index: 4;
     justify-content: center;
