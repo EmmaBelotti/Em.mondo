@@ -68,6 +68,7 @@ body{
     color: white; /*per il testo*/
     justify-content: center;
     align-content: center;
+    overflow-x: hidden;
 }
 
 #outerbody { /*for the article container*/

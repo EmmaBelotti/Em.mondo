@@ -91,6 +91,7 @@ body {
     color: white; /*per il testo*/
     justify-content: center;
     align-content: center;
+    overflow-x: hidden;
 }
 
 #titlebox {
@@ -103,7 +104,7 @@ body {
     border-color: #ffc20e;
     position: fixed; /* sta fermo */
     top: 0; 
-    width: 100vw;
+    width: 100vh;
     height: max(2.7em, 10%);
     z-index: 4;
     justify-content: center;
