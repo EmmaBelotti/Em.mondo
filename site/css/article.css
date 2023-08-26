@@ -11,17 +11,17 @@ a { /*altrimenti i link non si vedono */
 
 @keyframes gradiente {
     0%{
-        --color1: 219;
+        --color1: 172;
         --color2: 96;
     }
 
     50%{
         --color1: 96;
-        --color2: 219;
+        --color2: 172;
     }
 
     100%{
-        --color1: 219;
+        --color1: 172;
         --color2: 96;
     }
 }
@@ -33,7 +33,7 @@ a { /*altrimenti i link non si vedono */
 
 @property --color1 { /*controllano R del gradiente*/
     syntax: '<number>';
-    initial-value: 219;
+    initial-value: 172;
     inherits: false;
 }
 
@@ -45,7 +45,7 @@ a { /*altrimenti i link non si vedono */
 
 @keyframes titlebox { /*controllano il colore del titlebox*/
     0%{
-        background-color: rgba(9, 219, 247, 1);
+        background-color: rgb(9, 172, 247);
     }
 
     50%{
@@ -53,7 +53,7 @@ a { /*altrimenti i link non si vedono */
     }
 
     100%{
-        background-color: rgba(9, 219, 247, 1);
+        background-color: rgba(9, 172, 247, 1);
     }
 }
 
@@ -73,7 +73,7 @@ body{
 
 #outerbody { /*for the article container*/
     animation: gradiente 8s infinite;
-    background-image: linear-gradient(rgb(9,var(--color1, 219),247), rgb(9,var(--color2, 96),247), rgb(9,var(--color1, 219),247));
+    background-image: linear-gradient(rgb(9,var(--color1, 172),247), rgb(9,var(--color2, 96),247), rgb(9,var(--color1, 172),247));
     height: 100%;
 }
 
@@ -81,7 +81,7 @@ body{
     display: flex;
     gap: 1%;
     animation: titlebox 8s infinite;
-    background-color: rgba(9, 219, 247, 1);
+    background-color: rgba(9, 172, 247, 1);
     border-width: 2px;
     border-style: hidden hidden solid hidden; /*solo al lato inferiore*/
     border-color: #ffc20e;
