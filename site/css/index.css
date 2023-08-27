@@ -95,6 +95,7 @@ body {
 }
 
 #titlebox {
+    overflow-x: hidden ;
     display: flex;
     gap: 1%;
     animation: titlebox 8s infinite;
@@ -105,7 +106,7 @@ body {
     position: fixed; /* sta fermo */
     top: 0; 
     width: 100vw;
-    height: max(2.7em, 10%);
+    height: max(2.7em, 10vh);
     z-index: 4;
     justify-content: center;
     align-content: center;
