@@ -85,7 +85,7 @@ body {
     flex-direction: column;
     position: relative;
     height:100%;
-    max-width: 100%;
+    max-width: 100vw;
     animation: gradiente 8s infinite;
     background-image: linear-gradient(rgb(var(--color1, 100),32,188), rgb(var(--color2, 180),32,188), rgb(var(--color1, 100),32,188));
     color: white; /*per il testo*/
@@ -104,7 +104,7 @@ body {
     border-color: #ffc20e;
     position: fixed; /* sta fermo */
     top: 0; 
-    width: 100%;
+    width: 100vw;
     height: max(2.7em, 10%);
     z-index: 4;
     justify-content: center;
