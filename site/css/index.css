@@ -80,6 +80,7 @@ a { /*altrimenti i link non si vedono */
 }
 
 body {
+    overflow-x: clip;
     margin: 0;
     display: flex;
     flex-direction: column;
