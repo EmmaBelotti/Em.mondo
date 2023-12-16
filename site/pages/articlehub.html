@@ -18,10 +18,11 @@
         </style> 
         <script>
             function resizeIframe() {
+                 // Resizes the iframes on the page to fit the content inside.
                 var iframe = document.getElementById('buttonframe');
                 iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-                var iframe = document.getElementById('article');
-                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+                var aiframe = document.getElementById('article');
+                aiframe.height = aiframe.contentWindow.document.body.scrollHeight + "px";
             }
 
             window.addEventListener('resize', resizeIframe);
