@@ -169,14 +169,27 @@ body {
 }
 
 .middleimage {
+    /*position: relative; cancellato perche' non necessario*/
     animation: middleimage 6s infinite;
-    position: relative;
-    object-fit:contain;
+    object-fit: cover;
     max-width: max(280px, 25cqw); /*cqw e' una percentuale della grandezza del contenitore*/
+    max-height: max(280px, 25cqw);;
     border-width: 2px;
     border-style: solid;
     border-color: #ffc20e;
     border-radius: 1%;
+}
+
+.textparagraph{ /*tiene una immagine e un argomento*/
+    flex-wrap: wrap;
+    margin-left: 0,5em;
+    margin-right: 0,5em;
+    display:flex;
+    height:fit-content;
+    justify-content: center;
+    gap: 1em;
+    align-content: center;
+
 }
 
 #celeste {
