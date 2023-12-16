@@ -169,11 +169,10 @@ body {
 }
 
 .middleimage {
-    /*position: relative; cancellato perche' non necessario*/
     animation: middleimage 6s infinite;
     object-fit: cover;
     max-width: max(280px, 25cqw); /*cqw e' una percentuale della grandezza del contenitore*/
-    max-height: max(280px, 25cqw);;
+    max-height: max(280px, 25cqw);
     border-width: 2px;
     border-style: solid;
     border-color: #ffc20e;

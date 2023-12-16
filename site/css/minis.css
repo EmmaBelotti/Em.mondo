@@ -149,23 +149,28 @@ body {
 #minibox {
     display: flex;
     height: fit-content;
-    justify-items: center;;
-    gap: 0.5em;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    text-align: center;
 
 
 }
 
 .minicolumn {
     display: flex;
+    flex: 1 0 33%;
     flex-direction: column;
-    width: 33%;
-    gap: 0.5em;
-    text-align: center;
+    height: fit-content;
+    align-content: center;
 }
 
 .miniimg {
     animation: middleimage 6s infinite;
-    position: relative;
+    
+    object-fit: cover;
+    max-width: max(280px, 25cqw); /*cqw e' una percentuale della grandezza del contenitore*/
+    max-height: max(280px, 25cqw);
     border-width: 2px;
     border-style: solid;
     border-color: #ffc20e;
